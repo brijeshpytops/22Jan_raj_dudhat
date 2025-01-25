@@ -187,3 +187,67 @@ int main() {
     }
     return 0;
 }
+
+
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+
+
+#include<stdio.h>
+
+int main() {
+    int num = 5;
+    for(int row = 1; row <= num; row++){
+        for(int col = 1; col <= row; col++){
+            printf("%d ", col);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+
+
+#include<stdio.h>
+
+int main() {
+    int num = 5;
+    for(int row = 1; row <= num; row++){
+        for(int col = 1; col <= row; col++){
+            printf("%c ", col + 64);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+
+#include<stdio.h>
+
+int main() {
+    int num = 5, g = 0;
+    for(int row = 1; row <= num; row++){
+        for(int col = 1; col <= row; col++){
+            g++;
+            printf("%d ", g);
+        }
+        printf("\n");
+    }
+    return 0;
+}
